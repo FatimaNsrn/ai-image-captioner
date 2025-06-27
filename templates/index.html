@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Captioning App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Image Captioning</h1>
+    <p>Upload an image to generate its caption using AI.</p>
+
+    <div class="upload-section">
+      <label for="imageInput" class="button-common">Choose Image</label>
+      <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+      <button id="uploadButton" class="button-common">Generate Caption</button>
+    </div>
+
+
+
+    <div class="image-preview">
+      <img id="preview" src="" alt="Image Preview" style="display: none;" />
+    </div>
+
+    <div class="caption-result">
+      <h2>Caption:</h2>
+      <p id="captionText">No caption generated yet.</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
