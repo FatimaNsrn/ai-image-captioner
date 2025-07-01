@@ -48,6 +48,8 @@ This project implements an image captioning model using the BLIP architecture. T
 python app.py
 ```
 Open http://localhost:5000 in a browser to upload images and get captions instantly.
+![Screenshot 2025-07-02 010830](https://github.com/user-attachments/assets/3174bced-ef6c-47d1-8d41-909ce2a3a631)
+
 
 ### Requirements
 - Google Colab (recommended for GPU access during training)
